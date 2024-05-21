@@ -27,10 +27,17 @@
           </li>
           @guest
           <li class="nav-item active">
+<<<<<<< HEAD
             <a class="btn btn-outline" style="margin-right:5px; background-color:white;" href="{{ URL::to('login') }}">Sign In</a>
           </li>
           <li class="nav-item active">
             <a class="btn btn-outline" style="background-color:white;" href="{{ URL::to('register') }}">Sign Up</a>
+=======
+            <a class="btn btn-outline" style="margin-right:5px;" href="{{ URL::to('login') }}">Sign In</a>
+          </li>
+          <li class="nav-item active">
+            <a class="btn btn-outline" href="{{ URL::to('register') }}">Sign Up</a>
+>>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
           </li>
           @endguest
           @auth
@@ -60,4 +67,8 @@
   100% { color: white; }
 }
 
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
