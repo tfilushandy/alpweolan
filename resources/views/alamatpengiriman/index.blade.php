@@ -30,14 +30,15 @@
               <tbody>
               @foreach($itemalamatpengiriman as $pengiriman)
                 <tr>
-                  <td>
-                    {{ $pengiriman->nama_penerima }}
-                  </td>
-                  <td>
-                  </td>
-                  <td>
-                    {{ $pengiriman->no_tlp }}
-                  </td>
+        <td>
+          {{ $pengiriman->IDGAME }}
+        </td>
+        <td>
+          {{ $pengiriman->no_tlp }}
+        </td>
+        <td>
+          {{ $pengiriman->EMAIL }}
+        </td>
                   <td>
                     <form action="{{ route('alamatpengiriman.update',$pengiriman->id) }}" method="post">
                       @method('patch')
@@ -88,7 +89,7 @@
                 </div>
                 <div class="form-group">
                   <label for="no_telp">NO WA</label>
-                  <input type="text" name="NO WA" class="form-control" value={{old('no_telp') }}>
+                  <input type="text" name="no_tlp" class="form-control" value={{old('no_tlp') }}>
                 </div>
                 <div class="form-group">
                   <label for="EMAIL">EMAIL</label>

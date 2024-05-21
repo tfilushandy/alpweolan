@@ -11,15 +11,12 @@ class AlamatPengiriman extends Model
     protected $fillable = [
         'user_id',
         'status',
-        'nama_penerima',
+        'IDGAME',
         'no_tlp',
-        'alamat',
-        'provinsi',
-        'kota',
-        'kecamatan',
-        'kelurahan',
-        'kodepos',
+        'EMAIL',
     ];
+
+    
 
     public function user() {
         return $this->belongsTo('App\Models\User', 'user_id');

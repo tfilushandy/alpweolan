@@ -39,19 +39,33 @@ class AlamatPengirimanController extends Controller
      */
     public function store(Request $request)
     {
+        // Validate the input data
         $this->validate($request, [
             'IDGAME' => 'required',
+            'EMAIL' => 'required|email',
         ]);
-        $itemuser = $request->user(); // Get the logged-in user data
-        $inputan = $request->only('IDGAME'); // Get only the 'IDGAME' input
+    
+        // Get the logged-in user data
+        $itemuser = $request->user();
+    
+        // Get the input data
+        $inputan = $request->only(['IDGAME', 'no_tlp', 'EMAIL']);
+    
+        // Add additional required data
         $inputan['user_id'] = $itemuser->id;
         $inputan['status'] = 'utama';
+    
+        // Create a new shipping address record
         $itemalamatpengiriman = AlamatPengiriman::create($inputan);
-        // Set all shipping addresses' status to 'tidak' except for the newly created one
+    
+        // Update all other shipping addresses' status to 'tidak'
         AlamatPengiriman::where('id', '!=', $itemalamatpengiriman->id)
-                    ->update(['status' => 'tidak']);
+                        ->update(['status' => 'tidak']);
+    
+        // Redirect back with success message
         return back()->with('success', 'Shipping address saved successfully');
     }
+    
 
     /**
      * Display the specified resource.
