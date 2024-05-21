@@ -4,11 +4,7 @@
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-<<<<<<< HEAD
                 <div class="card text-white" style="border-radius: 1rem; background:linear-gradient(to right, #3354e7, slategray);">
-=======
-                <div class="card text-white" style="border-radius: 1rem; background:#ADC178;">
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
                     <div class="card-body p-5 text-center">
                         <div class="mb-md-5 mt-md-4 pb-5">
                             <h1>Sign Up</h1>
@@ -19,7 +15,6 @@
                                 <div class="col">
                                     @csrf
                                     <div class="mt-2">
-<<<<<<< HEAD
                                         <input type="text" name="name" id="name" class="form-input form-control" autofocus placeholder="Nama" style="background:white">
                                     </div>
                                     <div class="mt-2">
@@ -40,28 +35,6 @@
                                     <div class="mt-2">
                                         <button type="submit" class="btn btn-outline mt-3" style="color: black; background:white">Sign-Up</button>
                                         <p class="mt-2">Already have an account?<a href="{{ route('login') }}" style="color: black"> Sign-In here</a></p>
-=======
-                                        <input type="text" name="name" id="name" class="form-input form-control" autofocus placeholder="Nama">
-                                    </div>
-                                    <div class="mt-2">
-                                        <input type="text" name="email" id="email" class="form-input form-control" autofocus placeholder="Email">
-                                    </div>
-                                    <div class="mt-2">
-                                        <input type="text" name="alamat" id="alamat" class="form-input form-control" autofocus placeholder="Alamat">
-                                    </div>
-                                    <div class="mt-2">
-                                        <input type="text" name="phone" id="phone" class="form-input form-control" autofocus placeholder="No Telepon">
-                                    </div>
-                                    <div class="mt-4">
-                                        <input type="password" name="password" id="password" class="form-input form-control" autofocus placeholder="Password">
-                                    </div>
-                                    <div class="mt-2">
-                                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-input form-control" autofocus placeholder="Confirmation Password">
-                                    </div>
-                                    <div class="mt-2">
-                                        <button type="submit" class="btn btn-outline mt-3" style="color: black">Sign-Up</button>
-                                        <p class="mt-2">Already have an account?<a href="{{ route('login') }}" class="text-decoration-none"> Sign-In here</a></p>
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +65,6 @@
         </div>
     </div>
 </div>
-<<<<<<< HEAD
 
 <style>
 .bg-auth{
@@ -106,6 +78,4 @@ background-image: url('/images/BG4.jpg');
 }
 
 </style>  
-=======
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
 @endsection

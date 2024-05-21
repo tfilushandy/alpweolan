@@ -2,7 +2,6 @@
 @section('content')
 <div class="container" style="margin-top:70px;">
   <div class="row mt-4">
-<<<<<<< HEAD
     <div class="col-lg-8">
       <div class="card" style="border-color:linear-gradient(to right, #3354e7, slategray); box-shadow: 5px 6px 6px 2px #e9ecef;">
         <div class="card-header" style="border:none; background:linear-gradient(to right, #3354e7, slategray);">
@@ -27,23 +26,6 @@
       <div class="row">
         <div class="col">
           <div class="card" style="border:none; background:linear-gradient(to right, #3354e7, slategray); box-shadow: 5px 6px 6px 2px #e9ecef;">
-=======
-    <div class="col col-lg-8 col-md-8">
-      @foreach($itemproduk->images as $index => $image)
-      @if($index == 0)
-        <img src="{{ \Storage::url($image->foto) }}" class="d-block w-100" alt="..." style="max-height: 750px; width: 100%; box-shadow: 5px 6px 6px 2px #e9ecef;">
-      @else
-        <img src="{{ asset('images/KOJO 1.png') }}" class="d-block w-100" alt="..." style="max-height: 750px; width: 100%;">
-      @endif
-      @endforeach
-    </div>
-
-<!-- Product -->
-    <div class="col col-lg-4 col-md-4">
-      <div class="row">
-        <div class="col">
-          <div class="card" style="border:none; background-color: #ADC178; box-shadow: 5px 6px 6px 2px #e9ecef;">
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
             <div class="card-body card-yellow">
               @if(count($errors) > 0)
               @foreach($errors->all() as $error)
@@ -85,11 +67,7 @@
               <form action="{{ route('wishlist.store') }}" method="post">
                 @csrf
                 <input type="hidden" name="produk_id" value={{ $itemproduk->id }}>
-<<<<<<< HEAD
                 <button type="submit" class="btn btn-sm" style="background-color:white">
-=======
-                <button type="submit" class="btn btn-sm">
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
                 @if(isset($itemwishlist) && $itemwishlist)
                   <i class="fas fa-heart"></i> Add to Wishlist
                 @else
@@ -102,11 +80,7 @@
               <form action="{{ route('cartdetail.store') }}" method="POST">
                 @csrf
                 <input type="hidden" name="produk_id" value={{$itemproduk->id}}>
-<<<<<<< HEAD
                 <button class="btn btn-sm" type="submit" style="margin-top:5px;  background-color: white;">
-=======
-                <button class="btn btn-sm" type="submit" style="margin-top:5px;">
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
                   <i class="fa fa-shopping-cart"></i> Add to Cart
                   </button>
               </form>
@@ -117,19 +91,11 @@
         </div>
       </div>
       
-<<<<<<< HEAD
       <!-- Description -->
       <div class="row mt-4">
         <div class="col">
           <div class="card" style="border-color:linear-gradient(to right, #3354e7, slategray); box-shadow: 5px 6px 6px 2px #e9ecef;">
             <div class="card-header" style="border:none; background:linear-gradient(to right, #3354e7, slategray);">
-=======
-<!-- Description -->
-      <div class="row mt-4">
-        <div class="col">
-          <div class="card" style="border-color:#ADC178; box-shadow: 5px 6px 6px 2px #e9ecef;">
-            <div class="card-header" style="border:none; background-color: #ADC178;">
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
               <h5>Description</h5>
             </div>
             <div class="card-body">
@@ -138,22 +104,12 @@
           </div>
         </div>
       </div>
-<<<<<<< HEAD
       
       <!-- Comment -->
       <div class="row mt-4">
         <div class="col">
           <div class="card" style="border-color:linear-gradient(to right, #3354e7, slategray); box-shadow: 5px 6px 6px 2px #e9ecef;">
             <div class="card-header" style="border:none; background:linear-gradient(to right, #3354e7, slategray);">
-=======
-
-
-<!-- Comment -->
-      <div class="row mt-4">
-        <div class="col">
-          <div class="card" style="border-color:#ADC178; box-shadow: 5px 6px 6px 2px #e9ecef;">
-            <div class="card-header" style="border:none; background-color: #ADC178;">
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
               <h5>Add Review</h5>
             </div>
             <div class="card-body">
@@ -184,19 +140,11 @@
     </div>
   </div>
 
-<<<<<<< HEAD
   <!-- DisplayComment -->
   <div class="row mt-4">
     <div class="col">
       <div class="card" style="border-color:linear-gradient(to right, #3354e7, slategray); box-shadow: 5px 6px 6px 2px #e9ecef;">
         <div class="card-header" style="border:none; background:linear-gradient(to right, #3354e7, slategray);">
-=======
-<!-- DisplayComment -->
-  <div class="row mt-4">
-    <div class="col">
-      <div class="card" style="border-color:#ADC178; box-shadow: 5px 6px 6px 2px #e9ecef;">
-        <div class="card-header" style="border:none; background-color: #ADC178;">
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
           <h5>Display Comment</h5>
         </div>
         <div class="card-body">

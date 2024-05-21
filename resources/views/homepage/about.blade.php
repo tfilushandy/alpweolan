@@ -7,17 +7,11 @@
         <h2 class="judul">Tentang Kami</h2>
       </div>
       <div class="text-container">
-<<<<<<< HEAD
         <p>Selamat datang di WEOLAN. Kami adalah sebuah platform yang didedikasikan
           untuk memudahkan Anda dalam melakukan top up kebutuhan game. <br>
            Dengan menggunakan metode transaksi otomatis (Auto Transaction Method), <br>
            kami menyediakan layanan yang cepat, aman, dan dapat diandalkan,
            sehingga <br>Anda dapat menikmati pengalaman bermain game tanpa gangguan.</p>
-=======
-        <p>Selamat datang di WEOLAN. Kami adalah sebuah platform yang didedikasikan untuk memudahkan Anda dalam melakukan top up kebutuhan game.
-           Dengan menggunakan metode transaksi otomatis (Auto Transaction Method),
-           kami menyediakan layanan yang cepat, aman, dan dapat diandalkan, sehingga Anda dapat menikmati pengalaman bermain game tanpa gangguan.</p>
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
       </div>
     </div>
   </div>
@@ -31,7 +25,6 @@
   overflow: hidden;
   position: relative;
   margin: 20px;
-<<<<<<< HEAD
   background-image: url('/images/BG2.jpg');
   background-size: cover;
   background-position: top;
@@ -39,29 +32,15 @@
   border: 0px;
   position: relative;
   margin-top: -24px;
-=======
-  background-image: url('/images/BG1.jpeg');
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  display: flex;
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
   justify-content: center;
   align-items: center;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
 .judul-container {
   position: absolute;
   top: 20px;
   left: 50%;
-<<<<<<< HEAD
   margin-top: -50px;
-=======
->>>>>>> 7c082ecb3e24e7d8b8c276259ac21bad84f6f29d
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
